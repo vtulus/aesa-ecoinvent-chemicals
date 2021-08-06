@@ -1,0 +1,18 @@
+conda-env
+
+.ipynb_checkpoints
+.pylint.d
+.spyproject
+.vscode
+__pycache__
+
+calcs
+/data
+/examples
+/refs
+/reports
+/repository
+viz_edits
+
+# temp- will be removed from dir later
+01.Calculations
