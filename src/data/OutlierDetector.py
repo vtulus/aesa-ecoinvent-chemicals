@@ -169,19 +169,23 @@ class OutlierDetector:
     #         df_outliers.loc[list_non_outliers, label] = np.nan
     #     df_treated.sort_index(inplace=True)
     #     df_outliers.sort_index(inplace=True)
-    #     return df_treated, df_outliers
+    #     return df_treated, df_outliersñ
 
-    def mahalanobis_method(
-        self, df_raw, alpha=0.001
-    ):  # pylint: disable=too-many-locals
-        """Split `df_raw` in two dataframes: (1)-filtered data, (2)-detected outliers.
+    # TODO:
+    # add parameter add_pvalues: bool -> will decide whether to add a p_values column to DataFrame
+    # remove df_raw from description
+    # replace df_raw with self.df_raw
+    # include `make_full_df_after_outlier_detection_method` in this method
+    # and in the method below
+    def mahalanobis_method(self, cols: list, alpha=0.001):
+        """Split `self.df_raw` in two dataframes: (1)-filtered data, (2)-detected outliers.
 
         Perform multivariate detection of outliers (https://www.wikiwand.com/en/Outlier)
-        based on Mahalanobis distances (MD) for ALL the columns of the `df_raw`
-        and return 2 dataframes:
-        1º dataframe - contains only filtered data (no outliers) + column with computed p_values
-        2º dataframe - with the shape [`df_raw`rows, `df_raw`columns+1] contains
-            only detected outliers + column with computed p_values
+        based on Mahalanobis distances (MD) for ALL the columns of `self.df_raw` labeled as
+        in list `cols` and return 2 dataframes:
+        1º dataframe - contains only filtered data (no outliers)
+        2º dataframe - contains only detected outliers
+        Optionally, includes additional column with computed p_values
 
         Parameters
         ----------
