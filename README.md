@@ -1,2 +1,10 @@
-# aesa-ecoinvent-chemicals
-proj 17 - GreenCh paper
+# Applying AESA method to assess chemicals from ecoinvent database
+<p align="center">
+  <img src="https://pubs.rsc.org/en/Image/Get?imageInfo.ImageType=GA&imageInfo.ImageIdentifier.ManuscriptID=D1GC02623B&imageInfo.ImageIdentifier.Year=2021" />
+</p>
+
+**Abstract:**  
+Environmental assessments in green chemistry often rely on simplified metrics that enable comparisons between alternative routes but fail to shed light on whether they are truly sustainable in absolute terms, viz. relative to the Earth’s ecological capacity. To expand our currently limited knowledge of the extent to which chemicals are environmentally sustainable, here we analyse 492 chemical products through the lens of seven planetary boundaries representing critical biophysical limits that should never be exceeded. We found that most of them transgress these environmental guardrails, mainly the ones strongly connected to greenhouse gas emissions (i.e., climate change, ocean acidification and biosphere integrity). However, their levels of transgression fail to correlate with their carbon footprints, currently the focus of most studies, implying that chemicals entailing higher greenhouse gas emissions are not necessarily less environmentally sustainable in absolute terms. Our work points towards the need to embrace absolute sustainability criteria in current environmental assessments, which will require agreeing on how to allocate shares of the planet’s ecological capacity among anthropogenic activities, including chemicals’ production. This work’s **absolute environmental sustainability assessment** (AESA) method, which could complement standard life cycle assessment approaches, might help experimental researchers working in green chemistry develop truly ‘green’ products. The AESA method should be taken as a starting point to devise holistic approaches for quantifying the absolute environmental impact of chemicals to guide research and policymaking more sensibly.
+
+---
+>  Published paper can be found [here](https://doi.org/10.1039/D1GC02623B).
