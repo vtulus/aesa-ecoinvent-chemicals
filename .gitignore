@@ -1,3 +1,5 @@
+*.code-workspace
+
 conda-env
 
 .ipynb_checkpoints
